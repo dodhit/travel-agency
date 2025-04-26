@@ -1,0 +1,119 @@
+
+:root {
+    --primary-color : #14183E;
+    --secondary-color : #5E6282;
+    --orange-color : #DF6951;
+    --yellow-color : #F1A501;
+
+    --orange-color-hover: #af4f3c;
+    --yellow-color-hover: #c28604;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/************************************************************
+* Hero Baner
+*************************************************************/
+.hero-content {
+    background-image: url("/public/assets/images/Decore.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+nav .nav-item {
+    padding: 0.2rem 2rem;
+    font-size: medium;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+nav .nav-item:hover {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+nav .nav-item--border {
+    border: 0.1rem solid var(--secondary-color);
+    border-radius: 0.3rem;
+}
+nav .nav-item--border:hover{
+    border: 0.2rem solid var(--secondary-color);
+}
+
+.hero-content .hero-desc .tagline {
+    color: var(--orange-color);
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 100%;
+}
+.hero-content .hero-desc .heading {
+    color: var(--primary-color);
+    font-family: 'Volkhov', 'sans-serif';
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 89%;
+}
+.hero-content .hero-desc .cta .cta-btn--yellow {
+    background-color: var(--yellow-color)
+}
+.hero-content .hero-desc .cta .cta-btn--yellow:hover{
+    background-color: var(--yellow-color-hover)
+}
+.cta-link {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .cta-link:hover{
+    border: 0.1rem solid var(--orange-color-hover);
+    border-radius: 10px;
+  }
+  .cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #ffff;
+    background-color: var(--orange-color);
+    margin-right: 10px;
+  }
+  
+  .cta-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: #ffff;
+  }
+  
+  .cta-text {
+    margin-left: 8px;
+  }
+
+.hero-content .hero-image img {
+    max-width: 785px;
+    max-height: 765px;
+}
