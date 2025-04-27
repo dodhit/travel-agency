@@ -21,7 +21,7 @@ html, body {
     font-family: sans-serif;
     line-height: 1.5;
     background-color: #fff;
-    color: #000;
+    color: var(--secondary-color);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -41,7 +41,6 @@ nav .nav-item {
     padding: 0.2rem 2rem;
     font-size: medium;
     font-weight: 500;
-    color: var(--secondary-color);
 }
 
 nav .nav-item:hover {
@@ -116,4 +115,61 @@ nav .nav-item--border:hover{
 .hero-content .hero-image img {
     max-width: 785px;
     max-height: 765px;
+}
+
+main .section-title {
+    font-family: 'Poppins', 'sans-serif';
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+main .section-headline {
+    margin-top: 10px;
+    font-family: 'Volkhov', 'sans-serif';
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: 700;
+}
+main .card-service {
+    padding: 3rem;
+    justify-items: center;
+}
+main .card-servive--active {
+    border-radius: 20px;
+    box-shadow: 0px 1.85px 3.15px 0px #00000001;
+
+}
+main .card-service-content {
+    text-align: center;
+}
+main .card-service-content h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+main .card-destination {
+    font-family: "Poppins";
+    max-width: 300px;
+}
+main .card-destination img {
+    border-radius: 1.5rem;
+}
+
+main .card-destination .card-destination-content {
+    margin-top: -8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    backface-visibility: hidden;
+}
+main .card-destination .card-destination-content svg {
+    margin-right: 10px;
+    transform: rotate(320deg);
+    color: var(--primary-color);
+}
+
+footer {
+    margin-top: 10rem;
 }

@@ -17,15 +17,17 @@
 </head>
 <body>
     <div class="container">
-        <div id="header"></div>
-        <div id="hero"></div>
-        <main>
-          <section class="service"></section>
+        <section id="header"></section>
+        <section id="hero"></section>
+        <main class="relative isolate mx-auto max-w-7xl px-6 pt-14 lg:px-8">
+          <section id="service"></section>
+          <section id="destination"></section>
         </main>
+        <section id="footer"></section>
     </div>
 
     <script>
-      const includes = ['header', 'hero', 'service'];
+      const includes = ['header', 'hero', 'service', 'destination', 'footer'];
       includes.forEach(id => {
         fetch(`components/${id}.html`)
           .then(res => res.text())
