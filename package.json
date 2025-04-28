@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "npx tailwindcss -i ./dist/style.css -o ./dist/output.css --minify",
+    "build": "npm run build:css"
   },
   "keywords": [],
   "author": "",
