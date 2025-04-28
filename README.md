@@ -13,21 +13,21 @@ A modern travel agency website built with HTML and Tailwind CSS.
 
 ```
 travel-agency/
-├── src/
-│   ├── index.html      # Main HTML file
-│   ├── input.css       # Tailwind CSS input file
-│   ├── output.css      # Compiled Tailwind CSS
-│   └── components/     # HTML components
-│       ├── header.html
-│       ├── hero.html
-│       ├── service.html
-│       ├── destination.html
-│       └── footer.html
+├── index.html          # Main HTML file
+├── dist/components/         # HTML components
+│   ├── header.html
+│   ├── hero.html
+│   ├── service.html
+│   ├── destination.html
+│   └── footer.html
 ├── public/
 │   ├── css/
 │   │   └── style.css   # Custom CSS
 │   └── assets/
 │       └── images/     # Image assets
+├── src/
+│   ├── input.css       # Tailwind CSS input file
+|   └── output.css          # Compiled Tailwind CSS
 ├── package.json        # Project dependencies
 └── tailwind.config.js  # Tailwind configuration
 ```
@@ -61,7 +61,8 @@ npm run build
 ```
 
 This command will:
-- Compile Tailwind CSS from `src/input.css` to `src/output.css`
+- Compile Tailwind CSS from `src/input.css` to `output.css`
+- Copy HTML files and components to the correct locations
 
 2. To serve the website locally:
 ```bash
@@ -72,12 +73,16 @@ The website will be available at `http://localhost:3000`
 
 ## Available Scripts
 
-- `npm run build` - Builds the CSS
+- `npm run build` - Builds the project (CSS and copies files)
 - `npm run build:css` - Builds only the Tailwind CSS
+- `npm run copy:html` - Copies HTML files
+- `npm run copy:components` - Copies component files
+- `npm run copy:assets` - Copies asset files
+- `npm run copy:css` - Copies CSS files
 
 ## Deployment
 
-The project is configured for deployment on Vercel. The `vercel.json` configuration will automatically serve files from the `src` directory.
+The project is configured for deployment on Vercel. The `vercel.json` configuration will automatically serve files from the root directory.
 
 ## License
 
