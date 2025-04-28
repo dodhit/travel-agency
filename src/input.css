@@ -1,3 +1,5 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* masukkan dulu module yang mau dipake biar bisa keexcute */

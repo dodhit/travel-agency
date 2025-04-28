@@ -152,10 +152,11 @@ main .card-service-content h2{
 
 main .card-destination {
     font-family: "Poppins";
-    max-width: 300px;
+    max-width: 310px;
 }
 main .card-destination img {
     border-radius: 1.5rem;
+    height: 457px;
 }
 
 main .card-destination .card-destination-content {
@@ -171,5 +172,9 @@ main .card-destination .card-destination-content svg {
 }
 
 footer {
-    margin-top: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+footer .group {
+    margin-top: 20px;
 }
