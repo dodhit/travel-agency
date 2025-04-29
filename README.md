@@ -13,17 +13,18 @@ A modern travel agency website built with HTML and Tailwind CSS.
 
 ```
 travel-agency/
-├── index.html              # Main HTML file
-├── css/ 
-│   ├── output.css          # Compailed Tailwind CSS
-│   └── style.css           # Custom CSS
+
 ├── public/
+|   ├── index.html          # Main HTML file
 |   ├── components/         # HTML components
 │   │   ├── header.html
 │   |   ├── hero.html
 │   |   ├── service.html
 │   |   ├── destination.html
 │   |   └── footer.html
+|   ├── css/ 
+|   |   ├── output.css      # Compailed Tailwind CSS
+|   |   └── style.css       # Custom CSS
 │   └── assets/
 │       └── images/         # Image assets
 ├── src/

@@ -30,7 +30,7 @@ html, body {
 * Hero Baner
 *************************************************************/
 .hero-content {
-    background-image: url("public/assets/images/Decore.png");
+    background-image: url("assets/images/Decore.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
