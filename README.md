@@ -13,23 +13,24 @@ A modern travel agency website built with HTML and Tailwind CSS.
 
 ```
 travel-agency/
-├── index.html          # Main HTML file
-├── dist/components/         # HTML components
-│   ├── header.html
-│   ├── hero.html
-│   ├── service.html
-│   ├── destination.html
-│   └── footer.html
+├── index.html              # Main HTML file
+├── css/ 
+│   ├── output.css          # Compailed Tailwind CSS
+│   └── style.css           # Custom CSS
 ├── public/
-│   ├── css/
-│   │   └── style.css   # Custom CSS
+|   ├── components/         # HTML components
+│   │   ├── header.html
+│   |   ├── hero.html
+│   |   ├── service.html
+│   |   ├── destination.html
+│   |   └── footer.html
 │   └── assets/
-│       └── images/     # Image assets
+│       └── images/         # Image assets
 ├── src/
-│   ├── input.css       # Tailwind CSS input file
-|   └── output.css          # Compiled Tailwind CSS
-├── package.json        # Project dependencies
-└── tailwind.config.js  # Tailwind configuration
+│    └──input.css           # Tailwind CSS input file
+├── package.json            # Project dependencies
+├── vercel.json             # Vercel configuration
+└── tailwind.config.js      # Tailwind configuration
 ```
 
 ## Prerequisites
